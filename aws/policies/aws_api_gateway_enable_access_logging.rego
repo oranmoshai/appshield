@@ -7,8 +7,11 @@ __rego_metadata__ := {
 	"version": "v1.0.0",
 	"severity": "LOW",
 	"description": "API Gateway stages should have access log settings block configured to track all access to a particular stage. This should be applied to both v1 and v2 gateway stages.",
+	"category": "API Gateway",
+	"more_info": "x"
 	"possible_Impact": "Logging provides vital information about access and usage."
 	"recommended_actions": "Enable logging for API Gateway stages",
+	"apis": ['APIGateway:getRestApis', 'APIGateway:getStages'],
 	"url": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_stage#access_log_settings",
     "iac": true,
     "cspm": true,
