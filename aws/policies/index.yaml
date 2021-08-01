@@ -1,0 +1,2 @@
+- id: AWS061
+  file: aws_api_gateway_enable_access_logging.rego
